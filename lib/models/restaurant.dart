@@ -4,6 +4,7 @@ part "restaurant.g.dart";
 
 @JsonSerializable()
 class Restaurant {
+  String? restaurantId;
   final String address;
   final String name;
   final String imageUrl;
@@ -11,6 +12,7 @@ class Restaurant {
   final String phone;
 
   Restaurant({
+    this.restaurantId,
     required this.address,
     required this.name,
     required this.imageUrl,
