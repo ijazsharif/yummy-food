@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:food_delivery/strings.dart';
+import 'package:food_delivery/theme/strings.dart';
 import 'package:food_delivery/models/popular_item.dart';
 import 'package:food_delivery/models/restaurant.dart';
 import 'package:food_delivery/view_model/restaurant_home_vm/restaurant_home_vm.dart';
