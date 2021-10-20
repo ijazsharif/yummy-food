@@ -1,3 +1,4 @@
+import 'package:food_delivery/firebase/best_deals_reference.dart';
 import 'package:food_delivery/firebase/popular_reference.dart';
 import 'package:food_delivery/models/popular_item.dart';
 import 'package:food_delivery/view_model/restaurant_home_vm/restaurant_home_vm.dart';
@@ -7,5 +8,11 @@ class RestaurantHomeViewModelImp extends RestaurantHomeViewModel {
   Future<List<PopularItem>> displayMostPopularByRestaurantId(
       String restaurantId) {
     return getMostPopularByRestaurantId(restaurantId);
+  }
+
+  @override
+  Future<List<PopularItem>> displayBestDealsByRestaurantId(
+      String restaurantId) {
+    return getBestDealsByRestaurantId(restaurantId);
   }
 }
