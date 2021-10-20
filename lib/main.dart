@@ -7,9 +7,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   FirebaseApp app = await Firebase.initializeApp();
-  runApp(
-    MyApp(app: app),
-  );
+  runApp(MyApp(app: app));
 }
 
 class MyApp extends StatelessWidget {
