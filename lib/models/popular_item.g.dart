@@ -7,10 +7,10 @@ part of 'popular_item.dart';
 // **************************************************************************
 
 PopularItem _$PopularItemFromJson(Map<String, dynamic> json) => PopularItem(
-      foodId: json['food_id'] as String,
-      name: json['name'] as String,
-      menuId: json['menu_id'] as String,
-      image: json['image'] as String,
+      foodId: json['food_id'] == null ? '' : json['food_id'] as String,
+      name: json['name'] == null ? '' : json['name'] as String,
+      menuId: json['menu_id'] == null ? '' : json['menu_id'] as String,
+      image: json['image'] == null ? '' : json['image'] as String,
     );
 
 Map<String, dynamic> _$PopularItemToJson(PopularItem instance) =>
